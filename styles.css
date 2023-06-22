@@ -13,10 +13,10 @@ h1 {
 }
 
 button {
-    width: 200px;
+    width: 90px;
     height: 200px;
     font-size: large;
-    margin: 5px;
+    margin: 0px;
     background-color: white;
 }
 
