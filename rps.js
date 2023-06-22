@@ -8,11 +8,25 @@ const options = ["rock", "paper", "scissors"];
 /* function getComputerChoice(params) {
     return 
 } */
+
+function RockButton() {
+    userChoice = "rock";
+    PlayRPS();
+}
+function PaperButton() {
+    userChoice = "paper";
+    PlayRPS();
+}
+function ScissorsButton() {
+    userChoice = "scissors";
+    PlayRPS();
+}
+
 function PlayRPS() {
     comChoice = options[Math.floor(Math.random() * options.length)];
 
-    userChoice = prompt("Rock, paper, scissors?");
-    userChoice = userChoice.toLowerCase()
+    /*userChoice = prompt("Rock, paper, scissors?");
+    userChoice = userChoice.toLowerCase()*/
 
     if (comChoice == userChoice) {
         console.log("DRAW.")
