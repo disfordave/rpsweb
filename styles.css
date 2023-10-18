@@ -82,7 +82,12 @@ button {
 
 #result {
     text-align: center;
+    height: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 
 
 img {
