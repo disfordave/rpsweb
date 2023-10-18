@@ -9,17 +9,46 @@
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 </head>
 <body>
-    <h1>RPSWeb</h1>
-    <script src="rps.js"></script>
-    <div class="flex">
-    <button onclick="RockButton()"><img src="./img/rock.jpg" alt="Rock"></button>
-    <button onclick="PaperButton()"><img src="./img/paper.jpg" alt="Paper"></button>
-    <button onclick="ScissorsButton()"><img src="./img/scissors.jpg" alt="Scissors"></button>
-    </div>
-    <hr>
+    <main>
+        
+        <div id="game-wrapper">
+            <h1>RPSWeb</h1>
+            <div id="scoreboard">
+                <div class="scoreboard-item">
+                    <p>Attempts</p>
+                    <p id="attempts">0</p>
+                </div>
+                <div class="scoreboard-item">
+                    <p>Win</p>
+                    <p id="win">0</p>
+                </div>
+                <div class="scoreboard-item">
+                    <p>Draw</p>
+                    <p id="draw">0</p>
+                </div>
+                <div class="scoreboard-item">
+                    <p>Lose</p>
+                    <p id="lose">0</p>
+                </div>
+            </div>
+            <div class="flex">
+                <button class="game-button" id="rock-button"><img src="./img/button/rock.svg" alt="Rock"></button>
+                <button class="game-button" id="paper-button"><img src="./img/button/paper.svg" alt="Paper"></button>
+                <button class="game-button" id="scissors-button"><img src="./img/button/scissors.svg" alt="Scissors"></button>
+            </div>
+            <div id="result">
+                <p id="result-p">Choose one!</p>
+            </div>
+            <button id="reset-result-button">Reset Results</button>
+            <p>© 2023 <a class="no-color-link" href="https://reikavik.github.io" target="_blank" noopener noreferrer>Reikavik</a></p>
+            
+        </div>
+
+    </main>
+    <!-- <hr>
     <footer>
-        <p><a href="https://www.vecteezy.com/free-vector/rock-paper-scissors">Rock Paper Scissors Vectors by Vecteezy</a></p>
-        <p>© 2023 <a class="no-color-link" href="https://reikavik.github.io" target="_blank">Reikavik</a></p>
-    </footer>
+        <p>© 2023 <a class="no-color-link" href="https://reikavik.github.io" target="_blank" noopener noreferrer>Reikavik</a></p>
+    </footer> -->
+    <script src="rps.js"></script>
 </body>
 </html>

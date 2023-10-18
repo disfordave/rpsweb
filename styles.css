@@ -1,28 +1,94 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
+    margin: 0;
     font-family: Inter, Arial, Helvetica, sans-serif;
+    background-color: white;
+    
+}
+
+p {
+    text-align: center;
+}
+
+
+main {  
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem; */
 }
 
 h1 {
+    text-align: center;
+    margin: 0;
+}
+
+#game-wrapper {
+    display: flex;
+    flex-direction: column;
+    
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#scoreboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    /* background-color:dodgerblue;
+    border-radius: 1rem;
+    color: white; */
+}
+
+.scoreboard-item {
     text-align: center;
 }
 
 .flex {
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 button {
-    width: 200px;
-    height: 200px;
-    font-size: large;
-    margin: 10px;
-    background-color: white;
+    padding: 1rem;
+    background-color: transparent;
+    border-radius: 1rem;
+    border: 0.1rem solid rgba(160, 160, 160, 0.3);
+    /* box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.3); */
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    transition: all 0.2s ease-in-out;
 }
 
-img {
-    width: 100px;
+#result {
+    text-align: center;
 }
+
+
+img {
+    max-width: 100px;
+}
+
 
 a {
     text-decoration: none;
@@ -30,20 +96,37 @@ a {
     
 }
 
+footer {
+    padding: 1rem;
+}
+
 a.no-color-link {
     color: black;
 }
 
-a.no-color-link:hover {
-    color: rgb(85, 85, 85);
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: rgb(40, 40, 40);
+        color: white;
+    }
+
+    button {
+        color: white;
+    }
+
+    a.no-color-link {
+        color: white;
+    }
 }
 
-@media (max-width: 500px) {
-    button {
-        width: 100%;
-        margin: 5px;
+@media (hover: hover) {
+    /* when hover is supported */
+    button:hover {
+        transform: scale(1.1);
     }
-    img {
-        width: 100%;
+
+    a.no-color-link:hover {
+        color: rgb(85, 85, 85);
     }
-}
+  }
