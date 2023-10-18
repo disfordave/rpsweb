@@ -26,11 +26,7 @@ function getLocalStorage() {
 getLocalStorage();
 
 
-document.getElementById("reset-result-button").addEventListener("click", () => {
-    localStorage.clear();
-    getLocalStorage();
-    result.innerHTML = "Choose one!"
-})
+
 
 function updateScoreboard() {
     
@@ -47,6 +43,20 @@ function setLocalStorage() {
     localStorage.setItem("draw", draw);
     localStorage.setItem("lose", lose);
 }
+
+const confirmAction = () => {
+    const response = confirm("Are you sure you want to reset the scoreboard?");
+    if (response) {
+        localStorage.clear();
+        getLocalStorage();
+        result.innerHTML = "Choose one!"
+    } else {
+        return
+    }
+}
+
+document.getElementById("reset-result-button").addEventListener("click", confirmAction);
+
 
 const rockBtn = document.getElementById("rock-button");
 const paperBtn = document.getElementById("paper-button");
@@ -70,6 +80,7 @@ function scissorsButton() {
     userChoice = "scissors";
     playRPS();
 }
+
 
 function playRPS() {
     comChoice = options[Math.floor(Math.random() * options.length)];
