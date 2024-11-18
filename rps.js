@@ -109,3 +109,19 @@ function playRPS() {
     updateScoreboard();
     setLocalStorage();
 }
+
+// const computerPlayBtn = document.getElementById("computer-play-button");
+// const multiplayerBtn = document.getElementById("multiplayer-button");
+//
+// const computerPlayWrapper = document.getElementById("computer-play-wrapper");
+// const multiplayerWrapper = document.getElementById("multiplayer-wrapper");
+//
+// computerPlayBtn.addEventListener("click", () => {
+//     computerPlayWrapper.style.display = "flex";
+//     multiplayerWrapper.style.display = "none";
+// })
+//
+// multiplayerBtn.addEventListener("click", () => {
+//     multiplayerWrapper.style.display = "flex";
+//     computerPlayWrapper.style.display = "none";
+// })

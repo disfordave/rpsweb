@@ -12,9 +12,9 @@
 </head>
 <body>
     <main>
-        
-        <div id="game-wrapper">
+        <div id="computer-play-wrapper" class="game-wrapper">
             <h1>RPSWeb</h1>
+            <a href="/multi" id="multiplayer-link" class="no-color-link">Multiplayer</a>
             <div id="scoreboard">
                 <div class="scoreboard-item">
                     <p>Attempts</p>
@@ -34,18 +34,20 @@
                 </div>
             </div>
             <div class="flex">
-                <button class="game-button" id="rock-button"><img src="./img/button/rock.svg" alt="Rock"></button>
-                <button class="game-button" id="paper-button"><img src="./img/button/paper.svg" alt="Paper"></button>
-                <button class="game-button" id="scissors-button"><img src="./img/button/scissors.svg" alt="Scissors"></button>
+                <button class="game-button" id="rock-button"><img src="./img/rps/rock.svg" alt="Rock"></button>
+                <button class="game-button" id="paper-button"><img src="./img/rps/paper.svg" alt="Paper"></button>
+                <button class="game-button" id="scissors-button"><img src="./img/rps/scissors.svg" alt="Scissors"></button>
             </div>
             <div id="result">
                 <p id="result-p">Choose one!</p>
             </div>
             <button id="reset-result-button">Reset Scoreboard</button>
-            <p>© 2023 <a class="no-color-link" href="https://disfordave.com" target="_blank" noopener noreferrer>DisforDave</a></p>
-            
-        </div>
+            <footer>
+                <p>© 2023 <a class="no-color-link" href="https://disfordave.com" target="_blank" rel="noreferrer noopener">@disfordave</a></p>
+                <p>Vectors and icons by <a href="https://game-icons.net/?ref=svgrepo.com" target="_blank">Game Icons.net</a> in CC Attribution License via <a href="https://www.svgrepo.com/" target="_blank">SVG Repo</a></p>
+            </footer>
 
+        </div>
     </main>
     <script src="rps.js"></script>
 </body>

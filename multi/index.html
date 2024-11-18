@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPSWeb Multi</title>
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#282828" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+</head>
+<body>
+<main>
+    <div id="computer-play-wrapper" class="game-wrapper">
+        <h1>RPSWeb (Multi)</h1>
+        <div id="start-button-wrapper">
+            <div class="flex">
+                <a href=.. id="computer-play-link" class="no-color-link">Play with Computer</a>
+            </div>
+            <ol>
+                <li>Press the start button together</li>
+                <li>Select one of the buttons.</li>
+                <li>Wait for the result.</li>
+                <li>Show the result to your competitor.</li>
+            </ol>
+            <div class="flex"><button id="start-button">Start</button></div>
+        </div>
+        <div id="multi-play-buttons-wrapper">
+            <p><span>Remaining Time: </span><span id="remaining-time">00</span></p>
+            <div class="flex" id="choose-buttons">
+                <button title="Rock" class="game-button" id="rock-button"><img src="../img/rps/rock.svg" alt="Rock"></button>
+                <button title="Paper" class="game-button" id="paper-button"><img src="../img/rps/paper.svg" alt="Paper"></button>
+                <button title="Scissors" class="game-button" id="scissors-button"><img src="../img/rps/scissors.svg" alt="Scissors"></button>
+            </div>
+            <p id="wait-message">You’ve just made a choice, now wait...</p>
+        </div>
+        <div id="result-wrapper">
+            <div id="result-image-wrapper" class="flex">
+            </div>
+            <p>This user selected <span id="multi-user-choice">NONE</span></p>
+            <div class="flex">
+                <button id="play-again-button">Play Again</button>
+                <button id="back-to-start-button">Back to Start</button>
+            </div>
+        </div>
+        <footer>
+            <p>© 2023 <a class="no-color-link" href="https://disfordave.com" target="_blank" rel="noreferrer noopener">@disfordave</a></p>
+            <p>Vectors and icons by <a href="https://game-icons.net/?ref=svgrepo.com" target="_blank">Game Icons.net</a> in CC Attribution License via <a href="https://www.svgrepo.com/" target="_blank">SVG Repo</a></p>
+        </footer>
+    </div>
+</main>
+<script src="../multi.js"></script>
+</body>
+</html>
